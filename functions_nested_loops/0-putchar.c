@@ -10,8 +10,9 @@ char *c = "_putchar";
 int compteur = 0;
 while (compteur <= 8)
 {
+putchar(c[compteur]);
 compteur = compteur + 1;
 }
-putchar(c[compteur]);
+putchar('\n');
 return (0);
 }
