@@ -11,7 +11,8 @@ n = 0;
 while (n <= 9)
 {
 n = n + 1;
-printf("\n");
+printf("%d,n");
 }
+printf("\n");
 return (0);
 }
