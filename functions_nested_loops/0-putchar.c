@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<stdlib.h>
+/**
+* main - prints the numbers from 0 to 9
+*
+* Return: Always 0 (Success)
+*/
+int main(void)
+{
+char *c = "_putchar";
+compteur = 0;
+while (compteur <= 8)
+{
+compteur = compteur + 1;
+}
+putchar(c);
+return (0);
+}
