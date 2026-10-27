@@ -8,7 +8,7 @@ int main(void)
 {
 char *c = "_putchar";
 int compteur = 0;
-while (compteur <= 8)
+while (compteur < 8)
 {
 _putchar(c[compteur]);
 compteur = compteur + 1;
