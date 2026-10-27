@@ -1,8 +1,8 @@
 #include "main.h"
 /**
     * print_last_digit - check the code
-    * @c: character to check
-    * Return: Always 0.
+    * @n: character to check
+    * Return: the value of the last digit
     */
 int print_last_digit(int n)
 {
