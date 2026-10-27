@@ -7,11 +7,11 @@
 int main(void)
 {
 char *c = "_putchar";
-compteur = 0;
+int compteur = 0;
 while (compteur <= 8)
 {
 compteur = compteur + 1;
 }
-putchar(c);
+putchar(c[compteur]);
 return (0);
 }
