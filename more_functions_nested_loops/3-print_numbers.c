@@ -6,7 +6,7 @@
 void print_numbers(void)
 {
 int compteur;
-for (compteur = 0; compteur <=9; compteur++)
+for (compteur = 0; compteur <= 9; compteur++)
 {
 _putchar('0' + compteur);
 }
