@@ -6,9 +6,9 @@
 void more_numbers(void)
 {
 int ligne, n;
-for ligne == 0; ligne < 10; ligne++)
+for ligne (ligne == 0; ligne < 10; ligne++)
 {
-for  == 0; n <= 14; n++)
+for  (n == 0; n <= 14; n++)
 {
 if (n > 9)
 {
