@@ -15,8 +15,12 @@ int main()
 		printf("0) Quit\n");
 		if (scanf("%d", &choice) != 1)
 		{
-			printf("Invalid Input.\n");
+			printf("Invalid input.\n");
 			break;
+		}
+		if (choice < 0 || choice > 4)
+		{
+			printf("Invalid input.\n");
 		}
 		if (choice == 0)
 		{
