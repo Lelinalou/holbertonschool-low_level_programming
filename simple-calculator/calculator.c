@@ -42,6 +42,14 @@ int main()
 		result = A - B;
 		printf("Result: %d\n", result);
 		}
+		if (choice == 3)
+		{
+		int A, B, result;
+		scanf("%d", &A);
+		scanf("%d", &B);
+		result = A * B;
+		printf("Result: %d\n", result);
+		}
 	}
 	return 0;
 }
