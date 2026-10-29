@@ -63,6 +63,6 @@ int main()
 			result = A / B;
 			printf("Result: %d\n", result);
 		}
-	return 0;			
-	}			
+	}
+	return 0;				
 }
