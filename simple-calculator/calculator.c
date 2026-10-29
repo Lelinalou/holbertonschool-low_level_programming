@@ -59,7 +59,7 @@ int main()
 				}
 			scanf("%d", &A);
 			scanf("%d", &B);
-			result = A - B;
+			result = A / B;
 			printf("Result: %d\n", result);
 		}
 	}
