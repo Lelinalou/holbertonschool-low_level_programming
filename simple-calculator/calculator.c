@@ -52,16 +52,17 @@ int main()
 		}
 		if (choice == 3)
 		{
-			int A, B, result;
-				if(choice == 0)
+			int A, B, result;	
+			scanf("%d", &A);
+			scanf("%d", &B);
+			
+				if(B == 0)
 				{
 				printf("Error: division by zero");
 				}
-			scanf("%d", &A);
-			scanf("%d", &B);
 			result = A / B;
 			printf("Result: %d\n", result);
 		}
-	}
-	return 0;
+	return 0;			
+	}			
 }
