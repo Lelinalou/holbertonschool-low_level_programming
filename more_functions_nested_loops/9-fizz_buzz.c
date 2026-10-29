@@ -6,7 +6,7 @@
 * Return: void
 */
 
-void fizz_buzz(void)
+int main(void)
 {
 	int i;
 
@@ -23,5 +23,6 @@ void fizz_buzz(void)
 		if (i != 100)
 			putchar(' ');
 	}
-	putchar('\n');
+	putchar('\n');*
+	return(0);
 }
