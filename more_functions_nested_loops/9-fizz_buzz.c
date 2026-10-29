@@ -5,23 +5,22 @@
 * print Buzz instead of the number
 * Return: void
 */
-void fizz_buzz(void)
+int main(void)
 {
 int i;
 for(i = 0; i <= 100; i++)
-{
-        _putchar(i +'0');
-if (i % 3 == 0 && i % 5 == 0)
-{
-        printf("FizzBuzz");
+{       
+        if (i % 3 == 0 && i % 5 == 0)
+            printf("FizzBuzz");
+        else if (i % 3 == 0)
+            printf("Fizz");
+        else if (i % 5 == 0)
+            printf("Buzz");
+        else
+            printf("%d", i);
+        if (i != 100)
+            putchar(' ');
 }
-if (i % 3 == 0)
-{
-        printf("Fizz");
-}
-if (i % 5 == 0)
-{
-        printf("Buzz");
-}
-}
+putchar('\n');
+return(0);
 }
