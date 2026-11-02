@@ -23,12 +23,18 @@ Naive algorithm time: 0.558303 seconds
 Single-pass algorithm result: 25000
 Single-pass algorithm time: 0.000018 seconds
 
+Une naive est environ 31 000 fois plus lente qu'une passe : 0,558303 / 0,000018 ~ 31 000
+
 Pour le programme instrumentation_lab.c:
 
 TOTAL seconds: 0.000296
+Cette valeur représente le temps total d'éxécution de toutes les mesures
 BUILD_DATA seconds: 0.000140
+Cette valeur représente le temps pour éxécuter la fonction build_dataset(); qui rempli 50 000 entiers dans un tableau de manière aléatoire.
 PROCESS seconds: 0.000104
+Cette valeur représente le temps pour éxécuter la fonction process_dataset(); Cette fonction parcours tout le tableau pour appliquer une formule mathématique à chaque valeur, puis elle garde sa valeur absolue si le résultat est négatif avant de mettre à jour le tableau.(comme ca grâce à la valeur absolue toujours positif)
 REDUCE seconds: 0.000049
+
 
 Le programme le plus rapide est instrumentation_lab.c ~ 0.000296 secondes.
 TOTAL est supérieur a toutes les sous-mesures car il est le total de toutes ces dernières : addition
@@ -48,5 +54,4 @@ Cependant cette méthode a des limites;
 ## Practical Engineering Takeaway
 Les mesures doivent guider l'optimisation.
 Un ingenieur doit donc prioriser celle qui a le temps d'execution le plus long pour le réduire le plus possible.
-Car energie = puissance * temps; donc moins de temps = moins d'énergie consommée, donc meilleure efficacitée.
-Et selon moi, il faut plutôt choisir un algorithme dont le temps croît plus lentement par exemple O(n) plutôt que O(n**2) car cela devient plus important quand la taille des données augmentent.
+Comme appris durant mes années de bac physique-chimie, l'énergie est égale à la puissance multipliée par le temps, réduire le temps d'exécution permet de consommer moins d'énergie, ce qui rend l'algorithme plus efficace. C'est pour cela qu'il vaut mieux privilégier O(n) plutôt qu'en O(n^2). Sur un petit volume de données, la différence ne se voit pas vraiment. En revanche, avec un grand volume de données, l'écart devient énorme : en O(n), le temps reste proportionnel à la quantité de données (linéaire), alors qu'en O(n^2), le temps augmente beaucoup trop vite.
