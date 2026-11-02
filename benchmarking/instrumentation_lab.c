@@ -74,14 +74,13 @@ int main(void)
 
     t_total_end = clock();
 
-
     if (checksum == 0ul)
         printf("impossible\n");
 
-    printf("TOTAL seconds: %.6f\n", (double)t_total_end - t_total_start / CLOCKS_PER_SEC);
-    printf("BUILD_DATA seconds: %.6f\n", (double)t_build_end - t_build_start / CLOCKS_PER_SEC);
-    printf("PROCESS seconds: %.6f\n", (double)t_process_end - t_process_start / CLOCKS_PER_SEC);
-    printf("REDUCE seconds: %.6f\n", (double)t_reduce_end - t_reduce_start / CLOCKS_PER_SEC);
+    printf("TOTAL seconds: %.6f\n", (double)(t_total_end - t_total_start) / CLOCKS_PER_SEC);
+    printf("BUILD_DATA seconds: %.6f\n", (double)(t_build_end - t_build_start) / CLOCKS_PER_SEC);
+    printf("PROCESS seconds: %.6f\n", (double)(t_process_end - t_process_start) / CLOCKS_PER_SEC);
+    printf("REDUCE seconds: %.6f\n", (double)(t_reduce_end - t_reduce_start) / CLOCKS_PER_SEC);
 
     return 0;
 }
