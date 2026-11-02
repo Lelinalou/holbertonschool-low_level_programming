@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_rev - affiche une chaîne en sens inverse, puis d'un retour à la ligne
+ * print_rev - affiche une chaîne en sens inverse, puis un retour à la ligne
  * @s: la chaîne à afficher
  *
  * Return: rien
