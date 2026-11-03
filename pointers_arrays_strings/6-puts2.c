@@ -17,5 +17,5 @@ while (str[len] != '\0')
 	}
 	len++;
 }
-return (\n);
+_putchar('\n');
 }
