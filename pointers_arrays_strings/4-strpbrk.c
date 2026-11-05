@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-*_strspn - gets the length of a prefix substring
+*_strpbrk - gets the length of a prefix substring
 *@s: the string to be searched
 *@accept: the string containing the characters to match
-*Return: the number of bytes in the initial segment of s which consist only of bytes from accept
+*Return:number of bytes in initial segment of s which consist of byte of accept
 */
 char *_strpbrk(char *s, char *accept)
 {
