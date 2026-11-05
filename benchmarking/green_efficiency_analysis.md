@@ -14,7 +14,16 @@ Voici les résultats obtenus pour chaque programmes :
 Pour le programme baseline_loop.c :
 
 Iterations: 100000000
-Execution time: 0.109309 seconds
+Executions time: 0.109309 seconds
+
+Iterations: 100000000
+Executions time: 0.100102 seconds
+
+Iterations: 100000000
+Executions time: 0.099651 seconds
+
+On observe que l'éxécution est de plus en plus rapide au fil des essais.
+Si on compare le temps d'éxecution au nombre d'itérations (0.099651 / 100000000 = 0,00000000099651), cela veux dire que chaque itérations se fait en 0,00000000099651 secondes.
 
 Pour le programme comparison_algorithms.c
 
@@ -23,7 +32,20 @@ Naive algorithm time: 0.558303 seconds
 Single-pass algorithm result: 25000
 Single-pass algorithm time: 0.000018 seconds
 
-Une naive est environ 31 000 fois plus lente qu'une passe : 0,558303 / 0,000018 ~ 31 000
+Une naive est environ 31 000 fois plus lente qu'une passe : 0,558303 / 0,000018 ~ 31 000.
+Donc une passe est 31 000 fois plus rapide.
+
+Les deux algorithmes retournaient des résultats différents (625025000 contre 25000), alors qu’ils doivent compter la même chose : les nombres pairs d’un tableau de 50000 éléments. Le bon résultat est 25000, donc le bug venait de l’algorithme naïf : sa boucle interne (j <= i) incrémentait le compteur à chaque tour, ce qui comptait des paires au lieu d’éléments. J’ai corrigé en ajoutant la condition j == i dans le test, ce qui garde les deux boucles imbriquées (O(n²)) mais compte chaque élément une seule fois. Après correction, les deux algorithmes retournent 25000, la comparaison est donc valide.
+
+Voici les résultats avec le code modifié :
+
+Naive algorithm result: 25000
+Naive algorithm time: 1.398891 seconds
+Single-pass algorithm result: 25000
+Single-pass algorithm time: 0.000057 seconds
+
+Après correction, les deux algorithmes retournent 25000, la comparaison est donc valide : le naïf prend 1,398891 s contre 0,000057 s pour le single-pass, soit un rapport d’environ 24 500.
+(rapport = temps naïf / temps single-pass) donc ici (rapport = 1,398891 / 0,000057 ≈ 24 542).
 
 Pour le programme instrumentation_lab.c:
 

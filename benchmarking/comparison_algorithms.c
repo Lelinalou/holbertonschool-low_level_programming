@@ -25,7 +25,7 @@ static int count_even_naive(void)
     {
         for (j = 0; j <= i; j++)
         {
-            if (data[j] % 2 == 0)
+            if (j == i && data[j] % 2 == 0)
                 count++;
         }
     }
