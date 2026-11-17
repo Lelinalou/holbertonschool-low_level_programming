@@ -1,14 +1,16 @@
 #include "main.h"
 
 /**
- * whatsmyname - prints the name of the program
+ * main - prints the name of the program, followed by a new line
  * @argc: number of arguments
  * @argv: array of arguments
- * Return: void
+ *
+ * Return: Always 0 (Success)
  */
-void whatsmyname(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i = 0;
+
 	(void)argc;
 
 	while (argv[0][i] != '\0')
@@ -17,4 +19,6 @@ void whatsmyname(int argc, char *argv[])
 		i++;
 	}
 	_putchar('\n');
+
+	return (0);
 }
