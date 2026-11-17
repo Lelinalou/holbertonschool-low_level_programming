@@ -5,6 +5,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-
+int _putchar(char c);
+void whatsmyname(int argc, char *argv[]);
 
 #endif
