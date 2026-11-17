@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * args_counter - counts the number of arguments passed to the program
+ * main - counts the number of arguments passed to the program
  * @argc: number of arguments
  * @argv: array of arguments
  * Return: the number of arguments
