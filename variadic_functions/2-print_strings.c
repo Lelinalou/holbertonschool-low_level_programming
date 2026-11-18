@@ -25,9 +25,3 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_end(liste);
 	printf("\n");
 }
-
-int main(void)
-{
-    print_strings(", ", 2, "Jay", "Django");
-    return (0);
-}
