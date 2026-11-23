@@ -210,3 +210,7 @@ Aucune fuite : rien n'a été alloué.
 | `heap_example` | tas | fuite de 6 octets (`alice->name`) | `definitely lost` |
 | `aliasing_example` | tas + alias | use-after-free (lecture + écriture) | `Invalid read/write` sur bloc `free'd` |
 | `crash_example` | tas (jamais alloué) | déréférencement de `NULL` | `Invalid write`, `SIGSEGV` |
+
+
+
+
