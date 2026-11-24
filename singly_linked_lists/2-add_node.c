@@ -21,8 +21,25 @@ list_t *add_node(list_t **head, const char *str)
 		free(new);
 		return (NULL);
 	}
-	new->len = strlen(str);
+	new->len = _strlen(str);
 	new->next = *head;
 	*head = new;
 	return (new);
 }
+
+/**
+* _strlen - returns the length of a string
+* @s: string to be measured
+* Return: length of the string
+*/
+int _strlen(char *s)
+{
+	int longueur = 0;
+
+	while (s[longueur] != '\0')
+	{
+		longueur++;
+	}
+	return (longueur);
+}
+
